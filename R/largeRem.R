@@ -1,7 +1,16 @@
+#' Largest remainder method to round percentages
+#'
+#' This function helps rounding up our down a list of percentages
+#' (that add up to 100) into a list of integers that still add up to 100
+#' @param pcVec: a vector
+#' @examples
+#' b <- c(20.5,60.3,19.2)
+#' largeRem(b)
+#' [1] 21 60 19
+
 #   Build and Reload Package:  'Cmd + Shift + B'
 #   Check Package:             'Cmd + Shift + E'
 #   Test Package:              'Cmd + Shift + T'
-library(purrrlyr)
 
 largeRem <- function(pcVec) {
 
