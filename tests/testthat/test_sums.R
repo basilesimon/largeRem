@@ -16,6 +16,6 @@ test_that("Add and remove one in same vector", {
   expect_equal(largeRem(b), c(21,60,19))
 })
 
-test_that("Sum not equal to 100 still works", {
-  expect_equal(largeRem(d), c(19,31,50))
+test_that("Sum not equal to 100 breaks", {
+  expect_error(largeRem(d), "The sum of the items in your column isn't equal to 100")
 })
